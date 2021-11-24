@@ -81,7 +81,7 @@ def dice_roll():
 
 
 def parse_words():
-    with open("EFF Short List.txt") as f:
+    with open("..\\lists\\EFF Short List.txt") as f:
         line = f.readline()
         while line:
             line = f.readline()
