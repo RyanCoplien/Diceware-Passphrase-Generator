@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DicewareTest.iml" filepath="$PROJECT_DIR$/.idea/DicewareTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Diceware-Passphrase-Generator.iml" filepath="$PROJECT_DIR$/.idea/Diceware-Passphrase-Generator.iml" />
     </modules>
   </component>
 </project>
