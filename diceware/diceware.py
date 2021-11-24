@@ -3,7 +3,7 @@
 #   Description: Application that uses different word lists and python to automatically generate passphrases via
 #                Diceware to make memorable, secure passwords.
 
-
+# TODO: Use pip freeze and requirements file for github venv
 # TODO: Maybe make this into a GUI application?
 import secrets
 
@@ -14,7 +14,7 @@ def main():
     selection = input("Choose from the following actions:\n"
                       "1) Generate Diceware Passphrase\n"
                       "2) Configure Word Count\n"
-                      "3) Select Word List")
+                      "3) Select Word List\n")
     match selection:
         case 1:
             print("DO SOMETHING")
@@ -48,7 +48,7 @@ def config_word_list():
         selection = input("What word list would you like to use? (1 - 3)\n"
                           "1) EFF Long List (Recommended)\n"
                           "2) EFF Short List\n"
-                          "3) Original Diceware List")
+                          "3) Original Diceware List\n")
         if selection in [1, 2, 3]:
             return selection
         else:
