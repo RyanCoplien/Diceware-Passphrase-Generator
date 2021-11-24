@@ -1,6 +1,7 @@
 #   Author: Ryan Coplien
 #   Project: Diceware Test Project
-#   Description:
+#   Description: Application that uses different word lists and python to automatically generate passphrases via
+#                Diceware to make memorable, secure passwords.
 
 
 # TODO: Maybe make this into a GUI application?
@@ -21,7 +22,8 @@ def main():
             config_word_count()
         case 3:
             config_word_list()
-    # TODO: Utilize configuration file settings
+    # TODO: Utilize configuration file settings in order to continue application
+
 
 # TODO: Change function name, split functions if needed
 def config_word_count():
