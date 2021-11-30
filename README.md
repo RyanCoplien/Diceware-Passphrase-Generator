@@ -11,4 +11,4 @@ Relevant Links and References:\
 
 
 
-*Disclamer: I am NOT resposnible for the security and usage of this tool. While I have tried to implement secure methods that are reminiscent of the original Diceware documentation, this tool is meant to help create a custom Diceware passphrase in an easier way for showcasing the how Diceware can be implemented. My recommendation as well as Diceware creator Arnold G. Reinhold's recommendation is to use casino dice to truly randomly generate random numbers to select words from the wordlist.*
+*Disclamer: I am NOT resposnible for the security and usage of this tool. While I have tried to implement secure methods that are reminiscent of the original Diceware documentation, this tool is meant to help create a custom Diceware passphrase in an easier way for showcasing how Diceware can be implemented. My recommendation as well as Diceware creator Arnold G. Reinhold's recommendation is to manually use casino dice to truly randomly generate random numbers to select words from the wordlist.*
