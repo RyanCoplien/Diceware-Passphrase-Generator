@@ -17,12 +17,18 @@ def main():
                       "3) Select Word List\n")
     match selection:
         case 1:
-            print("DO SOMETHING")
+            create_passphrase()
         case 2:
             config_word_count()
         case 3:
             config_word_list()
     # TODO: Utilize configuration file settings in order to continue application
+
+
+def create_passphrase():
+    print(f"Rolling for {word_count} words using the {word_list}")
+    number_list = generate_numbers(word_count)
+    print(number_list)
 
 
 # TODO: Change function name, split functions if needed
@@ -31,16 +37,15 @@ def config_word_count():
         # Personal recommendation is no more than 7 words due to reaching limits of human memory,
         # Personal recommendation is 5 or more words due to brute forcing times
         word_count = int(input("How many words would you like to do use? You can select 1 - 8 words.\n"))
-        if word_count <= 0 or word_count > 8:
-            print("Please between 1 and 8 words!")
-            config_word_count()
+        if word_count > 0 or word_count <= 8:
+            print(f"Set word count to {word_count}.")
+            update_config("Count", word_count)
+            # TODO: Set config word count here
         else:
-            print(f"Rolling for {word_count} words.")
-            number_list = generate_numbers(word_count)
-            print(number_list)
+            print("Please between 1 and 8 words!")
     except ValueError:
         print("Please enter a number!")
-        config_word_count()
+    config_word_count()
 
 
 def config_word_list():
@@ -50,15 +55,17 @@ def config_word_list():
                           "2) EFF Short List\n"
                           "3) Original Diceware List\n")
         if selection in [1, 2, 3]:
-            return selection
+            # TODO: Look into ENUM for python
+            print(f"Set word list to {selection}")
+            update_config("List", selection)
         else:
             print("Please select a number 1 - 3")
     except ValueError:
         print("Please enter a number 1 - 3.")
-        config_word_list()
+    config_word_list()
 
 
-def select_word_list(list_option):
+def update_config(config_setting, config_option):
     print("DO SOMETHING")
 
 
@@ -67,7 +74,8 @@ def generate_numbers(word_count):
     full_dice_roll = ""
     dice_rolls = []
     # TODO: Add variable number based on wordlist here, CONSIDER SWITCHING TO FOR LOOP?
-    while count < (word_count * 4):
+    # TODO: Potentionally use arrays for word lists to have dice count?
+    while count < (word_count * 4): # TODO: Make this number a variable
         # Concatenate numbers, keep in string format
         full_dice_roll = f"{full_dice_roll}{dice_roll()}"
         count += 1
