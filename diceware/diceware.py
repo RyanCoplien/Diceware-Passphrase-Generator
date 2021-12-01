@@ -16,12 +16,10 @@ def main():
                       "2) Configure Word Count\n"
                       "3) Select Word List\n")
     match selection:
-        case 1:
-            create_passphrase()
-        case 2:
-            config_word_count()
-        case 3:
-            config_word_list()
+        case 1: create_passphrase()
+        case 2: config_word_count()
+        case 3: config_word_list()
+        case _: main()
     # TODO: Utilize configuration file settings in order to continue application
 
 
@@ -67,6 +65,12 @@ def config_word_list():
 
 def update_config(config_setting, config_option):
     print("DO SOMETHING")
+    # TODO: Update config settings right here
+
+
+def read_config():
+    # TODO: Read from config file here
+    return 0
 
 
 def generate_numbers(word_count):
@@ -74,7 +78,7 @@ def generate_numbers(word_count):
     full_dice_roll = ""
     dice_rolls = []
     # TODO: Add variable number based on wordlist here, CONSIDER SWITCHING TO FOR LOOP?
-    # TODO: Potentionally use arrays for word lists to have dice count?
+    # TODO: Potentially use arrays for word lists to have dice count?
     while count < (word_count * 4): # TODO: Make this number a variable
         # Concatenate numbers, keep in string format
         full_dice_roll = f"{full_dice_roll}{dice_roll()}"
@@ -87,10 +91,11 @@ def generate_numbers(word_count):
 
 def dice_roll():
     # Using secrete module to generate random dice rolls, as it is cryptographically secure.
-    return secrets.choice("123456")  # Use string, as conversion is not needed later
+    return secrets.choice("123456")  # Use string, as conversion to int is not needed later
 
 
 def parse_words():
+    # TODO: Make file variable, might be good to use array for wordlist
     with open("..\\lists\\EFF Short List.txt") as f:
         line = f.readline()
         while line:
