@@ -10,6 +10,7 @@
 # TODO              Batch mode for servers
 # TODO              New languages
 # TODO              More Lists
+# TODO              *POTENTIALLY* GUI for application via html and javascript?
 
 # TODO: Use pip freeze and requirements file for github venv
 # TODO: Maybe make this into a GUI application?
