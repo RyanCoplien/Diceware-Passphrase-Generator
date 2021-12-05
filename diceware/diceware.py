@@ -3,6 +3,14 @@
 #   Description: Application that uses different word lists and python to automatically generate passphrases via
 #                Diceware to make memorable, secure passwords.
 
+
+# TODO         ROADMAP:
+# TODO              Full functionality (Testing, deploying to github, readme, etc)
+# TODO              Config file to save settings
+# TODO              Batch mode for servers
+# TODO              New languages
+# TODO              More Lists
+
 # TODO: Use pip freeze and requirements file for github venv
 # TODO: Maybe make this into a GUI application?
 import secrets
