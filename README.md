@@ -1,4 +1,4 @@
-# Diceware-Passphrase-Generator
+# Diceware Passphrase Generator
 
 This is a Python Passphrase Generator that is meant to generate a Diceware passphrase from different wordlists.
 
